@@ -1,0 +1,16 @@
+/* Nesting o anidamiento */
+/* Variables */
+/* Variables */
+.button-ok {
+  color: green;
+}
+
+.button-not {
+  color: blue;
+}
+
+header nav ul li {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

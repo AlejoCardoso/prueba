@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* Nesting o anidamiento */
+/* Variables */
+.button-ok {
+  color: green;
+}
+
+.button-not {
+  color: blue;
+}
+
+.border-menu {
+  border: 1px solid #330000;
+}
+
+.bg-fotos {
+  background-color: #090;
+}
+
+.bg-fotos:hover {
+  background-color: lime;
+}
+
+.textos {
+  color: rgba(153, 0, 0, 0.4);
+}
+
+.seccion-loca {
+  background-color: #029700;
+}
+
+.saturate {
+  color: #990000;
+}
+
+/* Operadores */
+.seccion-img {
+  width: 50%;
+}
+
+.img-2 {
+  width: 100%;
+}
+
+.img-3 {
+  width: 50%;
+}
+
+/* Mapas */
+.standard {
+  background-color: red;
+}
+
+/* Extends */
+/* Bolsa de propiedades */
+.error, .accept, .disable {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error {
+  background-color: red;
+}
+
+.accept {
+  background-color: green;
+}
+
+.disable {
+  background-color: gray;
+}
+
+/* Mixin */
+/* Entre parentesis deja agregar una variable vacíá que en un futuro
+puedo dar su valor */
+.amimaciones {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.animacion {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.animacion-dos {
+  -webkit-transform: translate(200px);
+  transform: translate(200px);
+}
+
+.varios {
+  width: 100%;
+  padding: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.varios:hover {
+  width: 100%;
+  padding: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.varios-dos {
+  width: 50%;
+  padding: 18px;
+  display: block;
+}
+
+.turbio {
+  border-radius: 4px;
+  border: 1px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* */
+.bg-condiciones {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+.bg-dos {
+  background-color: blue;
+  border: 2px dotted gray;
+}
+
+header nav ul li {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

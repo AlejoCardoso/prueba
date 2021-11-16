@@ -1,0 +1,26 @@
+$rojo: #900;
+$verde: #090;
+
+.border-menu {
+    border: 1px solid darken($color: $rojo, $amount: 20%);
+}
+
+.bg-fotos {
+    background-color: $verde;
+
+    &:hover {
+        background-color: lighten($color: $verde, $amount: 20%);
+    }
+}
+
+.textos {
+    color: rgba($color: $rojo, $alpha: 0.4);
+}
+
+.seccion-loca {
+    background-color: mix($rojo, $verde, 1);
+}
+
+.saturate {
+    color: saturate($color: $rojo, $amount: 40%);
+}

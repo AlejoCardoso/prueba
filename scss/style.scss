@@ -1,0 +1,23 @@
+/* Nesting o anidamiento */
+
+@import './base/variables';
+@import './base/listas';
+@import './base/colores';
+@import './base/operadores';
+@import './base/mapas';
+@import './base/extends';
+@import './base/mixins';
+@import './base/condiciones';
+
+header {
+    nav {
+        ul {
+            li {
+                color: black;
+            }
+        }
+    }
+}
+
+
+

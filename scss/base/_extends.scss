@@ -1,0 +1,29 @@
+/* Extends */
+
+/* Bolsa de propiedades */
+
+%mensaje {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    background-color: red;
+    @extend %mensaje;
+}
+
+.accept {
+    background-color: green;
+    @extend %mensaje;
+}
+
+.disable {
+    background-color: gray;
+    @extend %mensaje;
+}

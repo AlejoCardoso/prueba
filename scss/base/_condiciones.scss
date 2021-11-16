@@ -1,0 +1,25 @@
+/* */
+
+// if (tu viejo === zapatero) {
+//     zarpale la lata
+// } else  {
+//     ranchamo en la esquina
+// }
+
+@mixin condicion($color) {
+    background-color: $color;
+
+    @if $color == orange {
+        border: 1px solid black
+    } @else {
+        border: 2px dotted gray;
+    }
+}
+
+.bg-condiciones {
+    @include condicion(orange);
+}
+
+.bg-dos {
+    @include condicion(blue);
+}

@@ -1,0 +1,57 @@
+/* Mixin */
+
+@mixin prefijos {
+    transform: scale(2);
+}
+
+/* Entre parentesis deja agregar una variable vacíá que en un futuro
+puedo dar su valor */
+
+.amimaciones {
+    @include prefijos();
+}
+
+@mixin pre($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+
+    transform: $propiedad;
+}
+
+.animacion {
+    @include pre(scale(2))
+}
+
+.animacion-dos {
+    @include pre(translate(200px))
+}
+
+@mixin varios-parametros ($ancho, $padding, $display) {
+    width: $ancho;
+    padding: $padding;
+    display: $display;
+}
+
+.varios {
+    @include varios-parametros(100%, 22px, flex);
+
+    &:hover {
+        @include varios-parametros(100%, 22px, flex)
+    }
+}
+
+.varios-dos {
+    @include varios-parametros(50%, 18px, block)
+}
+
+@mixin komolozupo ($border, $radius) {
+    border-radius: $radius;
+    border: $border;
+    width: 100%;
+    padding: 40px;
+}
+
+.turbio {
+    @include komolozupo(1px, 4px)
+}
